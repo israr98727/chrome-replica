@@ -1,0 +1,53 @@
+/* Main window container */
+/* Main window container */
+/* Main window container */
+.browser-window {
+  width: 95vw;
+  height: 90vh;
+  margin: 5vh auto; /* Center the window */
+  background-color: #dbdbdb; /* The gray background of the window frame */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex; /* This is crucial for the layout */
+  flex-direction: column; /* Stack children vertically */
+  overflow: hidden;
+  position: relative; /* Anchor for the window controls */
+}
+
+.window-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 8px;
+  z-index: 10;
+}
+
+.control {
+  color: #bdc1c6;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 16px;
+}
+
+.control:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+   /* Restore circular hover */
+}
+
+.control.close:hover {
+  background-color: #e81123;
+  color: white;
+}
+
+/* This holds the main page view (Google search, etc.) */
+/* This holds the main page view (Google search, etc.) */
+/* This holds the main page view (Google search, etc.) */
+.page-content {
+  flex-grow: 1; /* This makes the white area fill the remaining space */
+  background-color: #ffffff;
+  display: flex; /* This is required for flex-grow on the child to work */
+  flex-direction: column;
+}
+
+

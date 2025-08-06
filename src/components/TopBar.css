@@ -1,0 +1,49 @@
+.top-bar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-row {
+  padding: 6px 6px 0 6px; /* No bottom padding to connect with tabs */
+  background-color: #ede4be;
+}
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background-color: #ffffff;
+  height: 40px;
+}
+
+.navigation-icons,
+.menu-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #5f6368;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.user-icon {
+  background-color: #8ab4f8;
+  color: #202124;
+  font-weight: bold;
+  font-size: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
